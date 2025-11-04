@@ -1,0 +1,16 @@
+2025-11-04 12:36:52, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-04 12:36:53, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:84
+2025-11-04 12:37:24, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:84
+2025-11-04 12:37:25, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-04 12:37:25, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-04 12:37:26, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-04 12:37:36, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:84
+2025-11-04 12:37:46, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:84
+2025-11-04 12:37:51, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:84
+2025-11-04 12:37:57, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-04 12:40:57, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:95
+2025-11-04 12:41:24, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:95
+2025-11-04 12:41:33, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:95
+2025-11-04 12:45:45, EXEC, v:1, k:poo@budega, mode:FULL, rate:100, size:95
+2025-11-04 12:45:53, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-04 12:46:24, SELF, v:1, k:poo@budega, rate:100, human:amigo_e_monitor, alone:9, study:100

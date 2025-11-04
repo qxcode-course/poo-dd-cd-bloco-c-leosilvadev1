@@ -12,13 +12,14 @@ sources:
   type: clone
   branch: master
   cache_path: C:\Users\Leandro Silva Lima\Documents\poo-dd-cd-bloco-c-leosilvadev1\myrep\.tko\cache\poo\Readme.md
-  cache_timestamp: '2025-10-28 16:16:01'
+  cache_timestamp: '2025-11-04 12:36:47'
   filters:
   - listas
 expanded:
 - poo@campanha-principal
 - poo@bloco_c-listas
-tasks: {}
+tasks:
+  poo@budega: '{rate:100, human:amigo_e_monitor, alone:9, study:100}'
 flags:
   quests: 0
   tracks: 0
