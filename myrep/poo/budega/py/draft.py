@@ -47,10 +47,9 @@ class Budega:
         return None
 
     def __str__(self):
-        caixas = ", ".join(["-----" if x is None
-                            else str(x) for x in self.caixas])
-        espera = ", ".join([str(x) for x in self.espera])
-
+        caixas = ", ".join([str(x or "-----") for x in self.caixas])
+        espera = ", ".join([str(pessoa) for pessoa in self.espera])
+        
         return f"Caixas: [{caixas}]\nEspera: [{espera}]"
 
 def main():
