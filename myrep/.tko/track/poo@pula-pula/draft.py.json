@@ -2,8 +2,148 @@
     "patches": [
         {
             "label": "2025-11-11_16-12-40",
-            "content": "",
+            "content": "@@ -1,408 +0,0 @@\n-class Crianca:%0A    def __init__(self, nome: str, idade : int):%0A        self.nome = nome%0A        self.idade = idade%0A%0A    def __str__(self):%0A        return f%22%7Bself.nome%7D:%7Bself.idade%7D%22%0A%0Aclass Pula:%0A    def __init__(self):%0A        self.espera: list%5BCrianca%5D = %5B%5D%0A        self.pulapula: list%5BCrianca%5D = %5B%5D%0A        %0A    def arrive(self, nome: str, idade: int):%0A        self.espera.insert(0, Crianca(nome, idade))%0A%0A\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-11-16_14-56-36",
+            "content": "@@ -405,266 +405,4 @@\n ))%0A%0A\n-def main():%0A    pula = Pula()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22%22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0A        elif args %5B0%5D ==%22arrive%22:%0A            pula.arrive(args%5B1%5D, int(args%5B2%5D))%0A%0Amain()\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-11-16_14-59-29",
+            "content": "@@ -579,65 +579,8 @@\n ak%0A%0A\n-        elif args%5B0%5D == %22show%22:%0A            print(pula)%0A%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-16_15-03-25",
+            "content": "@@ -405,141 +405,8 @@\n ))%0A%0A\n-    def leave(self):%0A        if self.pulapula:%0A            crianca = self.pulapula.pop()%0A            self.espera.insert(0, crianca)%0A%0A\n def \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-11-16_15-05-05",
+            "content": "@@ -1,412 +1,37 @@\n-class Crianca:%0A    def __init__(self, nome: str, idade : int):%0A        self.nome = nome%0A        self.idade = idade%0A%0A    def __str__(self):%0A        return f%22%7Bself.nome%7D:%7Bself.idade%7D%22%0A%0Aclass Pula:%0A    def __init__(self):%0A        self.espera: list%5BCrianca%5D = %5B%5D%0A        self.pulapula: list%5BCrianca%5D = %5B%5D%0A        %0A    def arrive(self, nome: str, idade: int):%0A        self.espera.insert(0, Crianca(nome, idade))%0A%0A\n+@@ -405,166 +405,8 @@%0A ))%250A%250A%0A-\n     \n@@ -42,25 +42,27 @@\n enter(self):\n-%0A\n+%250A\n         if s\n@@ -72,17 +72,19 @@\n .espera:\n-%0A\n+%250A\n         \n@@ -110,17 +110,19 @@\n espera()\n-%0A\n+%250A\n         \n@@ -142,15 +142,11 @@\n pula\n-,pop()%0A\n+%250A\n     \n@@ -154,17 +154,19 @@\n    else:\n-%0A\n+%250A\n         \n@@ -179,475 +179,48 @@\n int(\n-%22\n+%2522\n Nao h\n-%C3%A1 ningu%C3%A9m%22)%0A%0A    def leave(self):%0A        if self.pulapula:%0A            crianca = self.pulapula.pop()%0A            self.espera.insert(0, crianca)%0A%0Adef main():%0A    pula = Pula()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22%22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0A        elif args%5B0%5D == %22show%22:%0A            print(pula)%0A%0A        elif args %5B0%5D ==%22arrive%22:%0A            pula.arrive(args%5B1%5D, int(args%5B2%5D))%0A%0Amain()\n+%25C3%25A1 ningu%25C3%25A9m%2522)%250A%250A%0A     %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-16_15-14-05",
+            "content": "@@ -552,9 +552,9 @@\n t(%22N\n-%C3%A3\n+a\n o h%C3%A1\n@@ -559,17 +559,17 @@\n h%C3%A1 ningu\n-e\n+%C3%A9\n m%22)%0A%0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-11-16_15-14-17",
+            "content": "@@ -290,24 +290,33 @@\n ianca%5D = %5B%5D%0A\n+        %0A\n     def arri\n@@ -400,16 +400,17 @@\n idade))%0A\n+%0A\n     def \n@@ -564,16 +564,17 @@\n nguem%22)%0A\n+%0A\n     def \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-11-16_15-15-00",
+            "content": "@@ -860,16 +860,17 @@\n   break%0A\n+%0A\n         \n@@ -917,16 +917,17 @@\n t(pula)%0A\n+%0A\n         \n@@ -999,14 +999,15 @@\n gs%5B2%5D))%0A\n+%0A\n main()\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-16_15-15-11",
+            "content": "@@ -691,153 +691,8 @@\n a)%0A%0A\n-    def __str__(self):%0A        espera = %22, %22.join(%5Bstr(c) for c ib self.espera%5D)%0A%0A        pulapula = %22, %22.join(%5Bstr(c) for c ib self.pulapula%5D)%0A%0A\n def \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-11-16_15-29-23",
+            "content": "@@ -748,25 +748,25 @@\n r(c) for c i\n-n\n+b\n  self.espera\n@@ -813,17 +813,17 @@\n  for c i\n-n\n+b\n  self.pu\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-16_15-29-35",
+            "content": "@@ -836,54 +836,8 @@\n %5D)%0A%0A\n-        return f%22%5B%7Bespera%7D%5D =%3E %5B%7Bpulapula%7D%5D%22%0A%0A\n def \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-16_15-30-16",
+            "content": "@@ -691,94 +691,8 @@\n a)%0A%0A\n-    def remove(self,nome : str):%0A        print(f%22fail: %7Bnome%7D nao esta no pulapula%22)%0A%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-11-16_15-31-45",
+            "content": "@@ -1278,74 +1278,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22remove%22%0A            pula.remove(args%5B1%5D)%0A\n main\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-16_15-32-26",
+            "content": "@@ -1306,17 +1306,16 @@\n %22remove%22\n-:\n %0A       \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-16_15-32-31",
+            "content": "@@ -1197,63 +1197,8 @@\n la)%0A\n-        elif args%5B0%5D == %22leave%22%0A            pula.leave%0A\n     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-16_15-33-16",
+            "content": "@@ -1224,17 +1224,16 @@\n  %22leave%22\n-:\n %0A       \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-16_15-33-22",
+            "content": "@@ -1,1293 +1,317 @@\n-class Crianca:%0A    def __init__(self, nome: str, idade : int):%0A        self.nome = nome%0A        self.idade = idade%0A%0A    def __str__(self):%0A        return f%22%7Bself.nome%7D:%7Bself.idade%7D%22%0A%0Aclass Pula:%0A    def __init__(self):%0A        self.espera: list%5BCrianca%5D = %5B%5D%0A        self.pulapula: list%5BCrianca%5D = %5B%5D%0A    def arrive(self, nome: str, idade: int):%0A        self.espera.insert(0, Crianca(nome, idade))%0A    def enter(self):%0A        if self.espera:%0A            crianca = self.espera()%0A            self.pulapula,pop()%0A        else:%0A            print(%22N%C3%A3o h%C3%A1 ninguem%22)%0A    def leave(self):%0A        if self.pulapula:%0A            crianca = self.pulapula.pop()%0A            self.espera.insert(0, crianca)%0A%0A    def remove(self,nome : str):%0A        print(f%22fail: %7Bnome%7D nao esta no pulapula%22)%0A%0A    def __str__(self):%0A        espera = %22, %22.join(%5Bstr(c) for c in self.espera%5D)%0A%0A        pulapula = %22, %22.join(%5Bstr(c) for c in self.pulapula%5D)%0A%0A        return f%22%5B%7Bespera%7D%5D =%3E %5B%7Bpulapula%7D%5D%22%0A%0Adef main():%0A    pula = Pula()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22%22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(pula)%0A        elif args%5B0%5D == %22leave%22:%0A            pula.leave%0A        elif args%5B0%5D == %22remove%22:\n+@@ -1270,20 +1270,20 @@%0A args%0A+ %0A %255B0%255D ==%0A- %2522remo%0A+%2522arri%0A ve%2522:%0A@@ -1300,20 +1300,20 @@%0A    pula.%0A-remo%0A+arri%0A ve(args%255B%0A@@ -1314,16 +1314,30 @@%0A (args%255B1%255D%0A+, int(args%255B2%255D)%0A )%250A      %0A@@ -1343,36 +1343,36 @@%0A    elif args%0A- %0A %255B0%255D ==%0A-%2522arri%0A+ %2522remo%0A ve%2522:%250A       %0A@@ -1373,36 +1373,36 @@\n %0A   \n@@ -328,107 +328,109 @@\n ula.\n+%0A-arri%0A+\n remo\n+%0A \n ve(args\n-%5B1%5D)%0A        elif args %5B0%5D ==%22arrive%22:%0A            pula.arrive(args%5B1%5D, int(args%5B2%5D))%0A\n+%255B1%255D, int(%0A@@ -1395,30 +1395,16 @@%0A (args%255B1%255D%0A-, int(args%255B2%255D)%0A )%250A\n main()\n+%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-16_15-33-48",
+            "content": "@@ -1,734 +1,238 @@\n-class Crianca:%0A    def __init__(self, nome: str, idade : int):%0A        self.nome = nome%0A        self.idade = idade%0A%0A    def __str__(self):%0A        return f%22%7Bself.nome%7D:%7Bself.idade%7D%22%0A%0Aclass Pula:%0A    def __init__(self):%0A        self.espera: list%5BCrianca%5D = %5B%5D%0A        self.pulapula: list%5BCrianca%5D = %5B%5D%0A%0A    def arrive(self, nome: str, idade: int):%0A        self.espera.insert(0, Crianca(nome, idade))%0A%0A    def enter(self):%0A        if self.espera:%0A            crianca = self.espera()%0A            self.pulapula,pop()%0A        else:%0A            print(%22N%C3%A3o h%C3%A1 ninguem%22)%0A%0A    def leave(self):%0A        if self.pulapula:%0A            crianca = self.pulapula.pop()%0A            self.espera.insert(0, crianca)%0A%0A    def remove(self,nome : str):%0A\n+@@ -294,17 +294,16 @@%0A a%255D = %255B%255D%250A%0A-%250A%0A     def %0A@@ -391,17 +391,16 @@%0A idade))%250A%0A-%250A%0A     def %0A@@ -554,17 +554,16 @@%0A nguem%2522)%250A%0A-%250A%0A     def %0A@@ -687,16 +687,16 @@%0A ianca)%250A%250A%0A+%0A     def %0A@@ -724,141 +724,8 @@%0A r):%250A%0A-\n     \n@@ -270,17 +270,19 @@\n espera):\n-%0A\n+%250A\n         \n@@ -303,17 +303,19 @@\n == nome:\n-%0A\n+%250A\n         \n@@ -341,12 +341,18 @@\n pera\n-%5Bi%5D%0A\n+%255Bi%255D%250A\n     \n@@ -373,688 +373,14 @@\n turn\n-%0A        print(f%22fail: %7Bnome%7D nao esta no pulapula%22)%0A%0A    def __str__(self):%0A        espera = %22, %22.join(%5Bstr(c) for c in self.espera%5D)%0A%0A        pulapula = %22, %22.join(%5Bstr(c) for c in self.pulapula%5D)%0A%0A        return f%22%5B%7Bespera%7D%5D =%3E %5B%7Bpulapula%7D%5D%22%0A%0Adef main():%0A    pula = Pula()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22%22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(pula)%0A        elif args%5B0%5D == %22leave%22:%0A            pula.leave%0A        elif args%5B0%5D == %22remove%22:%0A            pula.remove(args%5B1%5D)%0A        elif args %5B0%5D ==%22arrive%22:%0A            pula.arrive(args%5B1%5D, int(args%5B2%5D))%0Amain()\n+%250A%0A     %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-11-16_15-48-31",
+            "content": "@@ -860,143 +860,8 @@\n urn%0A\n-        for i, c in enumerate(self.pulapula):%0A            if c.nome == nome:%0A                del self.espera%5Bi%5D%0A                return%0A\n     \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-16_15-49-32",
+            "content": "@@ -1611,17 +1611,16 @@\n s %5B0%5D ==\n- \n %22arrive%22\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-16_15-50-07",
+            "content": "@@ -499,34 +499,21 @@\n pulapula\n-.insert(0, crianca\n+,pop(\n )%0A      \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-16_15-52-33",
+            "content": "@@ -475,12 +475,8 @@\n pera\n-,pop\n ()%0A \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-16_15-52-39",
+            "content": "@@ -865,33 +865,32 @@\n          return%0A\n-%0A\n         for i, c\n@@ -975,23 +975,21 @@\n el self.\n-pulapul\n+esper\n a%5Bi%5D%0A   \n@@ -1008,17 +1008,16 @@\n  return%0A\n-%0A\n         \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-16_15-53-25",
+            "content": "@@ -1378,17 +1378,16 @@\n .split(%22\n- \n %22)%0A%0A    \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-16_15-53-50",
+            "content": "@@ -1541,18 +1541,16 @@\n la.leave\n-()\n %0A       \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-16_15-54-39",
+            "content": "@@ -1061,9 +1061,8 @@\n pula\n--\n pula\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-16_15-55-40",
+            "content": "@@ -471,17 +471,17 @@\n f.espera\n-.\n+,\n pop()%0A  \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-16_15-59-54",
+            "content": "@@ -1698,66 +1698,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22enter%22:%0A            pula.enter()%0A\n main\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-16_16-09-58",
+            "content": "class Crianca:\n    def __init__(self, nome: str, idade : int):\n        self.nome = nome\n        self.idade = idade\n\n    def __str__(self):\n        return f\"{self.nome}:{self.idade}\"\n\nclass Pula:\n    def __init__(self):\n        self.espera: list[Crianca] = []\n        self.pulapula: list[Crianca] = []\n\n    def arrive(self, nome: str, idade: int):\n        self.espera.insert(0, Crianca(nome, idade))\n\n    def enter(self):\n        if self.espera:\n            crianca = self.espera.pop()\n            self.pulapula.insert(0, crianca)\n        else:\n            print(\"N\u00e3o h\u00e1 ninguem\")\n\n    def leave(self):\n        if self.pulapula:\n            crianca = self.pulapula.pop()\n            self.espera.insert(0, crianca)\n\n    def remove(self,nome : str):\n        for i, c in enumerate(self.espera):\n            if c.nome == nome:\n                del self.espera[i]\n                return\n\n        for i, c in enumerate(self.pulapula):\n            if c.nome == nome:\n                del self.pulapula[i]\n                return\n\n        print(f\"fail: {nome} nao esta no pula-pula\")\n\n    def __str__(self):\n        espera = \", \".join([str(c) for c in self.espera])\n\n        pulapula = \", \".join([str(c) for c in self.pulapula])\n\n        return f\"[{espera}] => [{pulapula}]\"\n\ndef main():\n    pula = Pula()\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(pula)\n        elif args[0] == \"leave\":\n            pula.leave()\n        elif args[0] == \"remove\":\n            pula.remove(args[1])\n        elif args [0] == \"arrive\":\n            pula.arrive(args[1], int(args[2]))\n        elif args[0] == \"enter\":\n            pula.enter()\nmain()",
+            "lines": "68"
         }
     ]
 }
