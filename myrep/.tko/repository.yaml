@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: C:\Users\Leandro Silva Lima\Documents\poo-dd-cd-bloco-c-leosilvadev1\myrep\.tko\cache\poo\Readme.md
-  cache_timestamp: '2025-11-16 16:55:46'
+  cache_timestamp: '2025-11-16 22:54:05'
   filters:
   - listas
 expanded:
@@ -20,8 +20,9 @@ expanded:
 - poo@campanha-principal
 - poo@bloco_c-listas
 tasks:
-  poo@budega: '{rate:100, human:monitor, alone:9, study:100}'
-  poo@pula-pula: '{rate:100, alone:10, study:120}'
+  poo@budega: '{rate:100, human:monitor, alone:9, study:160}'
+  poo@lapiseira: '{rate:100, alone:10, study:160}'
+  poo@pula-pula: '{rate:100, alone:10, study:180}'
   poo@cinema: '{rate:100, alone:10, study:100}'
 flags:
   quests: 1
@@ -30,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@lapiseira
+selected: poo@budega
